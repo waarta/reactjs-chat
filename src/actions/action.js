@@ -19,7 +19,6 @@ export const send = (author, message) => async dispatch => {
 			},
 			body: JSON.stringify({ author, message })
 		});
-		console.log("res", res);
 		dispatch({
 			type: SEND_MESSAGE,
 			data: { author, message }
